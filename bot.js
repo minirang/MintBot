@@ -109,7 +109,7 @@ function response(room, msg, sender, isGroupChat, replier) {
     const random = countries[Math.floor(Math.random() * countries.length)];
     currentQuiz = random;
 
-    replier.reply("🌍 국가를 맞혀라!\n" + random.emoji + "\n1분 안에 맞혀라");
+    replier.reply("국기를 보고 국가를 맞추세요.\n" + random.emoji + "\n제한시간: 1분");
 
     timeout = setTimeout(() => {
       if (currentQuiz !== null) {
