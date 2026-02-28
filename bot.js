@@ -126,7 +126,7 @@ function response(room, msg, sender, isGroupChat, replier) {
 
     if (answer === currentQuiz.name) {
       clearTimeout(timeout);
-      replier.reply("정답!");
+      replier.reply(sender + "님 정답!");
       currentQuiz = null;
     } else {
       replier.reply("ㅋ 틀림");
